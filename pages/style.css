@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../images/mainpage/background.png'); /* 배경 이미지 경로 설정 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: 300%;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    height: 75vh; /* 높이 지정 */
+}
+
+.carousel-item .slide3-button {
+    /* 버튼에 대한 스타일을 여기에 추가하세요 */
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    padding: 1% 2%;
+    background-color: lightsalmon;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw; /* 원하는 크기로 조절 */
+    border: none;
+    border-radius: 10vw;
+    cursor: pointer;
+    z-index: 1;
+    width: 5vw; /* 원하는 너비로 조절 */
+    height: 0.5vw;
+    line-height:0.5vw;
+    text-align: center; /* 텍스트 가운데 정렬 */
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.carousel-item .slide3-button:hover {
+    /* 버튼에 호버 효과에 대한 스타일을 여기에 추가하세요 */
+    background-color: salmon;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.arrow-prev,
+.arrow-next {
+    position: absolute;
+    top: 50%;
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.arrow-prev {
+    left: 3vw;
+}
+
+.arrow-next {
+    left: calc(100% - 3vw - 10vw);
+}
+
+.arrow-prev:hover::after,
+.arrow-next:hover::after {
+    border-top-color: white;
+    border-right-color: white;
+}
+
+.arrow-prev::after,
+.arrow-next::after {
+    position: absolute;
+    content: '';
+    width: 3.25vw;
+    height: 3.25vw;
+    border-top: 0.35vw solid rgba(128, 128, 128, 0.5);
+    border-right: 0.35vw solid rgba(128, 128, 128, 0.5);
+    transition: border-color 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.arrow-prev::after {
+    left: 1vw;
+    top: 0.25vw;
+    transform: rotate(225deg);
+}
+
+.arrow-next::after {
+    left: 4vw;
+    top: 0.25vw;
+    transform: rotate(45deg);
+}
+
+.control-btn {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.prev-btn {
+    left: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.next-btn {
+    right: 20px;
+    transform: translate(50%, -50%);
+}
+
+.carousel-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.indicator-bar {
+    width: 3.5%;
+    height: 2px;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.indicator-bar.active {
+    background-color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 25vh;
+}
+
+.button-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;  /* 이미지 너비를 자동으로 조절하여 비율을 유지합니다. */
+    height: auto; /* 이미지 높이를 자동으로 조절하여 비율을 유지합니다. */
+    margin-right: 1;
+}
+
+.contact-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 1%;
+}
+
+.custom-link {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.custom-link img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
