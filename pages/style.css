@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 600; /* 폰트 두께는 사용하는 폰트 파일에 맞게 조절하세요 */
+    src: local('NotoSansKR-SemiBold'), local('NotoSansKR-SemiBold'),
+         url('../font/NotoSansKR-Semibold.woff2') format('woff2'), /* 파일 형식 및 경로는 실제 파일 이름과 위치에 맞게 조절하세요 */
+         url('../font/NotoSansKR-Semibold.woff') format('woff'); /* 파일 형식 및 경로는 실제 파일 이름과 위치에 맞게 조절하세요 */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -127,7 +136,7 @@ body {
     border-radius: 10vw;
     cursor: pointer;
     z-index: 1;
-    width: 8.5vw;
+    width: 8vw;
     height: 0.5vw;
     line-height: 0.5vw;
     text-align: center;
