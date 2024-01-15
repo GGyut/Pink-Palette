@@ -3,10 +3,6 @@ body {
     padding: 0;
     overflow: hidden;
     position: relative;
-    background-image: url('../images/mainpage/background.png'); /* 배경 이미지 경로 설정 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .carousel-container {
@@ -307,6 +303,12 @@ img {
     background-color: white;
 }
 
+.button-contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
 .button-container {
     display: flex;
     justify-content: flex-end;
@@ -317,15 +319,16 @@ img {
 .button-container img {
     max-width: 100%;
     max-height: 100%;
-    width: auto;  /* 이미지 너비를 자동으로 조절하여 비율을 유지합니다. */
-    height: auto; /* 이미지 높이를 자동으로 조절하여 비율을 유지합니다. */
-    margin-right: 1;
+    width: auto;
+    height: 62%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .contact-image {
-    max-width: 100%;
-    max-height: 100%;
-    margin-right: 1%;
+    width: auto;
+    height: 25vh;
+    object-fit: cover;
 }
 
 .custom-link {
