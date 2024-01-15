@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 43%; /* 화면 하단에서의 위치, 비율로 조절 */
+    left: 78%; /* 화면 가로 중앙에서의 위치 */
+    transform: translateX(-50%);
+    width: 5vw; /* 화면 가로 크기의 5%로 조절 */
+    height: 8vh; /* 화면 세로 크기의 8%로 조절 */
+    background-image: url('images/intro/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: arrowAnimation 2s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

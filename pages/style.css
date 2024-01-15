@@ -20,7 +20,7 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 100%;
-    width: 300%;
+    width: 400%;
 }
 
 .carousel-item {
@@ -59,6 +59,82 @@ body {
 .carousel-item .slide3-button:hover {
     /* 버튼에 호버 효과에 대한 스타일을 여기에 추가하세요 */
     background-color: salmon;
+}
+
+.carousel-item .slide3-new-button {
+    position: absolute;
+    top: 65%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    padding: 1% 2%;
+    background-color: lightsalmon;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+    border: none;
+    border-radius: 10vw;
+    cursor: pointer;
+    z-index: 1;
+    width: 8vw;
+    height: 0.5vw;
+    line-height: 0.5vw;
+    text-align: center;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.carousel-item .slide3-new-button:hover {
+    background-color: salmon;
+}
+
+.carousel-item .slide4-button {
+    position: absolute;
+    top: 63%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    padding: 1% 2%;
+    background-color: lightskyblue;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+    border: none;
+    border-radius: 10vw;
+    cursor: pointer;
+    z-index: 1;
+    width: 8.9vw;
+    height: 0.5vw;
+    line-height: 0.5vw;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.carousel-item .slide4-button:hover {
+    background-color: slateblue;
+}
+
+.carousel-item .slide4-new-button {
+    position: absolute;
+    top: 63%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding: 1% 2%;
+    background-color: lightskyblue;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+    border: none;
+    border-radius: 10vw;
+    cursor: pointer;
+    z-index: 1;
+    width: 6vw;
+    height: 0.5vw;
+    line-height: 0.5vw;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.carousel-item .slide4-new-button:hover {
+    background-color: slateblue;
 }
 
 .carousel-item.active {
