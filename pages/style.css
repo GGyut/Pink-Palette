@@ -70,7 +70,7 @@ body {
     /* 버튼에 대한 스타일을 여기에 추가하세요 */
     position: absolute;
     top: 63%;
-    left: 28%;
+    left: 31.5%;
     transform: translate(-50%, -50%);
     padding: 1% 2%;
     background-color: lightcoral;
@@ -81,7 +81,7 @@ body {
     border-radius: 10vw;
     cursor: pointer;
     z-index: 1;
-    width: 5vw; /* 원하는 너비로 조절 */
+    width: 10.5vw; /* 원하는 너비로 조절 */
     height: 0.5vw;
     line-height:0.5vw;
     text-align: center; /* 텍스트 가운데 정렬 */
